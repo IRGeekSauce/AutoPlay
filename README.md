@@ -13,8 +13,7 @@ Feel free to beef up the code and make something even cooler!
 
 Installation
 ------------
-If you receive the installer package,
-install it wherever you like. Default will be
+Install it wherever you like. Default will be
 Program Files (x86)
 
 Author(s)
@@ -28,4 +27,4 @@ This executable was tested with
 
 Contact
 --------
-If you would like the installer, email me: irgeeksauce@gmail.com
+irgeeksauce@gmail.com

@@ -9,6 +9,7 @@ namespace AutoPlay
 {
     class Program
     {
+        //Get the user
         private static String username = Environment.UserName;
         private static String path = @"C:\Users\" + username + @"\Music\";
 
@@ -26,7 +27,7 @@ namespace AutoPlay
         {
             Run();
         }
-
+        //Just to show user that stuff is going on
         public static void Run()
         {        
             username = Environment.UserName;
@@ -48,6 +49,7 @@ namespace AutoPlay
             Environment.Exit(0);
 
         }
+        //auto-minimize wmplayer
         public static void MinimizePlayer()
         {
             Process[] ps = Process.GetProcesses();
@@ -60,13 +62,18 @@ namespace AutoPlay
                     ShowWindow(h, WindowShowStyle.Minimize);
                 }
             }
-        }    
+        }
+        //Sort files in Music directory alphabetically, and begin playing the first file
+        
         public static void OpenPlayer(String path)
         {
             string directory = @"C:\Users\" + username + @"\Music";
             DirectoryInfo dir = new DirectoryInfo(path);
             string firstFile = dir.GetFiles().OrderBy(fi => fi.Name).Select(fi => fi.Name).FirstOrDefault();
+            //Append filename to path
             path += firstFile;
+            
+            //Check to make sure it's not empty
             if (IsDirectoryEmpty(directory))
             {
                 Console.WriteLine("Your Music folder is empty.\nConsider adding music files.");
@@ -80,6 +87,7 @@ namespace AutoPlay
                 Process.Start("wmplayer.exe", path);
             }
         }
+        //Check for empty Music directory
         public static bool IsDirectoryEmpty(String path)
         {
             return !Directory.EnumerateFileSystemEntries(path).Any();

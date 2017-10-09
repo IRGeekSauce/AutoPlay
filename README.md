@@ -15,8 +15,7 @@ Installation
 ------------
 Install it wherever you like. Default will be
 Program Files (x86)
-Here's a link to the installer:
-<a href="https://github.com/IRGeekSauce/AutoPlay/blob/master/AutoPlay%20Setup.msi">
+<a href="https://github.com/IRGeekSauce/AutoPlay/blob/master/AutoPlay%20Setup.msi">Here's a link to the installer</a>
 
 Author(s)
 ---------

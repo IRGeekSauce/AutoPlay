@@ -1,4 +1,4 @@
-# AutoPlay
+# AutoPlay <img src="https://raw.githubusercontent.com/IRGeekSauce/AutoPlay/master/headphones.ico" alt="Icon">
 
 What is it? 
 -----------
